@@ -1,0 +1,47 @@
+# Blender Weapon Texture Render Pipeline - Requirements
+# 
+# Most dependencies are built into Blender and don't need separate installation.
+# This file is primarily for documentation purposes.
+
+# Core Requirements (Built into Blender)
+# =====================================
+# Python 3.11+ (included with Blender 4.1.1)
+# bpy (Blender Python API - built into Blender)
+# mathutils (included with Blender)
+
+# Standard Library Dependencies (Built into Python)
+# ================================================
+# os - for file system operations
+# math - for mathematical operations  
+# gc - for garbage collection and memory management
+
+# External Software Requirements
+# ==============================
+# Blender 4.1.1+ (https://www.blender.org/download/)
+# NVIDIA GPU with OptiX support (recommended for best performance)
+# CUDA drivers (for GPU rendering)
+
+# Optional Development Dependencies
+# ================================
+# If you want to contribute to development, you may want:
+# flake8>=6.0.0          # Code linting
+# black>=23.0.0          # Code formatting
+# pytest>=7.0.0          # Testing framework
+
+# System Requirements
+# ==================
+# Windows 10/11, macOS 10.15+, or Linux (Ubuntu 18.04+)
+# 8GB+ RAM (16GB+ recommended for large batch jobs)
+# 2GB+ GPU memory (more for higher resolution renders)
+# SSD storage (recommended for faster texture loading)
+
+# Installation Notes
+# ==================
+# 1. Install Blender 4.1.1 or higher
+# 2. Ensure NVIDIA drivers are up to date (for OptiX support)
+# 3. No pip install required - all dependencies are built into Blender
+# 4. Simply run the script within Blender or via command line
+
+# For Command Line Usage
+# ======================
+# blender scene.blend --background --python pngandmask_export.py 

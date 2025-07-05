@@ -1,0 +1,237 @@
+# Blender Export Pipeline - Git Ignore Rules
+
+# ======================
+# RENDERED OUTPUT FILES
+# ======================
+# Exclude all exported PNG files to prevent large file commits
+export/
+*.png
+*.jpg
+*.jpeg
+*.exr
+*.hdr
+
+# GLB and other 3D exports
+*.glb
+*.gltf
+*.obj
+*.fbx
+*.dae
+
+# ======================
+# BLENDER FILES
+# ======================
+# Blender backup files
+*.blend1
+*.blend2
+*.blend3
+*.blend@
+
+# Blender temporary files
+*.tmp
+*~
+
+# Large .blend files (optional - uncomment if you want to exclude)
+# *.blend
+
+# ======================
+# TEXTURE DIRECTORIES
+# ======================
+# Exclude texture source directories (too large for git)
+textures/
+texture_cache/
+**/weapon_*/
+
+# ======================
+# PYTHON FILES
+# ======================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ======================
+# SYSTEM FILES
+# ======================
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ======================
+# IDE / EDITOR FILES
+# ======================
+# VSCode
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# PyCharm
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# ======================
+# LOG FILES
+# ======================
+# Blender and script logs
+*.log
+logs/
+blender_*.txt
+render_log_*.txt
+
+# ======================
+# TEMPORARY DIRECTORIES
+# ======================
+# Temporary work directories
+temp/
+tmp/
+cache/
+.cache/
+
+# ======================
+# CONFIGURATION FILES
+# ======================
+# Local configuration (if any)
+config.local.py
+settings.local.py
+local_paths.py
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ======================
+# ARCHIVES
+# ======================
+# Compressed files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# ======================
+# MISC
+# ======================
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+
+# Patch files
+*.patch
+*.diff
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3 
