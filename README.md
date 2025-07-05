@@ -76,8 +76,8 @@ Your Blender file must contain:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/blender-export.git
-   cd blender-export
+   git clone https://github.com/bluegems661/blender-bluegemexport.git
+   cd blender-bluegemexport
    ```
 
 2. **Update paths** in `pngandmask_export.py`:
